@@ -36,3 +36,5 @@ job2-unittest    : test                 : target/surefire-reports/*.xml
 job3-codecoverage : cobertura:cobertura -Dcobertura.report.format=xml  : target/site/cobertura/coverage.xml ( publish cobertura coverage report )
                  
 job4-package     : package              : NA
+
+-----------------
